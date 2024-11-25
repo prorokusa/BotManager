@@ -3,6 +3,7 @@ from aiogram import types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from db.database import get_bot_location
+from config import ADMIN_ID
 
 class EditConfig(StatesGroup):
     waiting_for_config = State()
